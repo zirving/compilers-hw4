@@ -11,7 +11,7 @@ const regexes = {
     notFileForFirstWithLookAround: /^((?!(^file$|^for$|^first$)).)*$/,
     cOctal: /^0+[0-7]*$/,
     restrictedFloatingPoint: /^-?[0-9]+\.?[0-9]*((E|e)(-|\+)?[0-9]{1,3})?$/,
-    palindrome2358: /()/,
+    palindrome2358: /(^(.).?\2$)|(^(.)(.).\5\4$)|(^(.)(.)(.)(.)\10\9\8\7$)/,
     noNegativeIntLits: /()/,
     repeated: /()/,
   }
