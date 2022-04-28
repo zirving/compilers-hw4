@@ -13,7 +13,7 @@ const regexes = {
     restrictedFloatingPoint: /^-?[0-9]+\.?[0-9]*((E|e)(-|\+)?[0-9]{1,3})?$/,
     palindrome2358: /(^(.).?\2$)|(^(.)(.).\5\4$)|(^(.)(.)(.)(.)\10\9\8\7$)/,
     noNegativeIntLits: /()/,
-    repeated: /()/,
+    repeated: /^([a-z]*)\1$/,
   }
 
 export function matches(name, string) {
