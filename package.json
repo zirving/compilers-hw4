@@ -1,0 +1,16 @@
+{
+    "name": "compilers-hw4",
+    "version": "1.0.0",
+    "description": "regex matching for hw 4",
+    "main": "src/regexMatching.js",
+    "type": "module",
+    "scripts": {
+        "test": "c8 node_modules/.bin/mocha"
+    },
+    "author": "Emin Torlic, Erik Navarro, Jonathan Yeh, Joshua Stukenborg, Zach Irving",
+    "license": "MIT",
+    "devDependencies": {
+        "c8": "^7.11.0",
+        "mocha": "^9.2.2"
+    }
+}
