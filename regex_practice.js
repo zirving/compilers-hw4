@@ -9,7 +9,7 @@ const regexes = {
     mLComment: /()/,
     notFileForFirstNoLookAround: /()/,
     notFileForFirstWithLookAround: /^((?!(^file$|^for$|^first$)).)*$/,
-    cOctal: /()/,
+    cOctal: /^0[0-7]*$/,
     restrictedFloatingPoint: /()/,
     palindrome2358: /()/,
     noNegativeIntLits: /()/,
