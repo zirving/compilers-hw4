@@ -92,7 +92,7 @@ const FIXTURE = {
 }
 
 // Looks funny, but you can probably figure out what it does
-FIXTURE.notFileForFirstWithLookAround = FIXTURE.notFileForFirstNoLookAround
+//FIXTURE.notFileForFirstWithLookAround = FIXTURE.notFileForFirstNoLookAround
 
 for (let name of Object.keys(FIXTURE)) {
   describe(`When matching ${name}`, () => {

@@ -1,19 +1,20 @@
 const regexes = {
-    canadianPostalCode: /(^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9])/,
-    visa: /(4[0-9]{15}|(4[0-9]{12}))/,
-    masterCard: /(5[1-5]\d{14})|(2[2-6][0-9]{2}\d{12}|27[0-2]\d\d{12})/,
+   //
+    canadianPostalCode: /(^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9])/, //ALMOST DONE
+    visa: /(4[0-9]{15}|(4[0-9]{12}))/, //ALMOST DONE
+    masterCard: /(5[1-5]\d{14})|(2[2-6][0-9]{2}\d{12}|27[0-2]\d\d{12})/, //ALMOST DONE
     adaFloat: /()/,
-    notThreeEndingInOO: /w+[^(oo | OO)$]/,
-    divisibleBy32: /^(0+|((0|1)*00000))$/,
-    sevenThroughThirtyOne: /[7-9]|[12]\d|3[0-1]/,
-    mLComment: /()/,
-    notFileForFirstNoLookAround: /()/,
+    notThreeEndingInOO: /()/,
+    divisibleBy32: /^(0+|((0|1)*00000))$/, //FULLY DONE
+    sevenThroughThirtyOne: /[7-9]|[12]\d|3[0-1]/, //ALMOST DONE
+    mLComment: /\*.*\*/,
+    notFileForFirstNoLookAround: /\w?[^(file)|(for)|(first)]/,
     notFileForFirstWithLookAround: /^((?!(^file$|^for$|^first$)).)*$/,
-    cOctal: /^0[0-7]*$/,
-    restrictedFloatingPoint: /^-?[0-9]+\.?[0-9]*((E|e)(-|\+)?[0-9]{1,3})?$/,
-    palindrome2358: /(^(.).?\2$)|(^(.)(.).\5\4$)|(^(.)(.)(.)(.)\10\9\8\7$)/,
-    noNegativeIntLits: /()/,
-    repeated: /^([a-z]*)\1$/,
+    cOctal: /^0[0-7]*$/, //FULLY DONE
+    restrictedFloatingPoint: /^-?[0-9]+\.?[0-9]*((E|e)(-|\+)?[0-9]{1,3})?$/, //FULLY DONE
+    palindrome2358: /(^(.).?\2$)|(^(.)(.).\5\4$)|(^(.)(.)(.)(.)\10\9\8\7$)/, //ALMOST DONE
+    noNegativeIntLits: /(?<![-\d])(\d+)/, //FULLY DONE
+    repeated: /^([a-z]*)\1$/, //FULLY DONE
   }
 
 export function matches(name, string) {
