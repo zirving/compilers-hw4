@@ -1,8 +1,8 @@
 const regexes = {
    //
-    canadianPostalCode: /(^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9])/, //ALMOST DONE
-    visa: /(4[0-9]{15}|(4[0-9]{12}))/, //ALMOST DONE
-    masterCard: /(5[1-5]\d{14})|(2[2-6][0-9]{2}\d{12}|27[0-2]\d\d{12})/, //ALMOST DONE
+    canadianPostalCode: /(^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$)/, //FULLY DONE
+    visa: /^(4[0-9]{15}|(4[0-9]{12}))$/, //FULLY DONE
+    masterCard: /^((5[1-5]\d{14})|(2[2-6][0-9]{2}\d{12}|27[0-2]\d\d{12}))$/, //FULLY DONE
     adaFloat: /()/,
     notThreeEndingInOO: /()/,
     divisibleBy32: /^(0+|((0|1)*00000))$/, //FULLY DONE
