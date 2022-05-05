@@ -7,7 +7,7 @@ const regexes = {
     notThreeEndingInOO: /()/,
     divisibleBy32: /^(0+|((0|1)*00000))$/, //FULLY DONE
     sevenThroughThirtyOne: /^([7-9]|[12]\d|3[0-1])$/, //FULLY DONE
-    mLComment: /\*.*\*/,
+    mLComment: /^([(])\*[^a-zA-z]*\*([)])$/, //FULLY DONE
     notFileForFirstNoLookAround: /\w?[^(file)|(for)|(first)]/,
     notFileForFirstWithLookAround: /^((?!(^file$|^for$|^first$)).)*$/, //FULLY DONE
     cOctal: /^0[0-7]*$/, //FULLY DONE
