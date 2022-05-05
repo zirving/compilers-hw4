@@ -4,7 +4,7 @@ const regexes = {
     visa: /^(4[0-9]{15}|(4[0-9]{12}))$/, //FULLY DONE
     masterCard: /^((5[1-5]\d{14})|(2[2-6][0-9]{2}\d{12}|27[0-2]\d\d{12}))$/, //FULLY DONE
     adaFloat: /(^([0-9](_?[0-9])*)(\.([0-9](_?[0-9])*))?((E|e)(\+|-)?([0-9](_?[0-9])*))?$)|(^([0-9](_?[0-9])*)#([0-9A-Fa-f](_?[0-9A-Fa-f])*)(\.([0-9A-Fa-f](_?[0-9A-Fa-f])*))?#((E|e)(\+|-)?([0-9](_?[0-9])*))?$)/, //FULLY DONE 
-    notThreeEndingInOO: /()/,
+    notThreeEndingInOO: /^(?!^\p{L}([oO]{2})$)\p{L}*$/u , //FULLY DONE
     divisibleBy32: /^(0+|((0|1)*00000))$/, //FULLY DONE
     sevenThroughThirtyOne: /^([7-9]|[12]\d|3[0-1])$/, //FULLY DONE
     mLComment: /^([(])\*[^a-zA-z]*\*([)])$/, //FULLY DONE
